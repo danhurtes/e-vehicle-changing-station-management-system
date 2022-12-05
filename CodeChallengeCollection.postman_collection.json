@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "95f6de44-b5b9-4f14-8179-eb9074c93655",
+		"name": "CodeChallengeCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user2_secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"registrationPlate\": \"pen 331\",\r\n    \"connectorNumber\": 33\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/e-cars-charger/v1/startChangingSession",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"e-cars-charger",
+						"v1",
+						"startChangingSession"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user2_secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/e-cars-charger/v1/endChangingSession/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"e-cars-charger",
+						"v1",
+						"endChangingSession",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user1_secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/e-cars-charger/v1/chargingSessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"e-cars-charger",
+						"v1",
+						"chargingSessions"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "2022/12/05 13:40",
+							"disabled": true
+						},
+						{
+							"key": "dateTo",
+							"value": "2022-12-05 13:40",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/e-cars-charger/v1/appVersion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"e-cars-charger",
+						"v1",
+						"appVersion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "user1_secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"connectorNumber\": \"53\",\r\n    \"cpUniqueSerialNumber\": \"j22364c0b-762b-112c-a277-5321246128ad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/e-cars-charger/v1/newConnector",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"e-cars-charger",
+						"v1",
+						"newConnector"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

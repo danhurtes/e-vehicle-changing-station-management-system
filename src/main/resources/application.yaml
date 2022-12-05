@@ -1,0 +1,22 @@
+basic-auth:
+  users:
+    user1:
+      username: user1
+      password: user1_secret
+      roles: ADMIN
+    user2:
+      username: user2
+      password: user2_secret
+      roles: CUSTOMER
+
+rfid-tag:
+  validated:
+    charge-points:
+      charge-point1:
+        - 5225fsga-fgsd-42s3-bgdf-32dsafq11421
+        - r8234c0b-662b-642c-a277-53212461281g
+        - h8674c0b-we3b-882c-a277-34546432281f
+      charge-point2:
+        - e8674c0b-062b-4a2c-a277-2042461281f5
+        - 74362364-sdh3-wqe4-2563-fsdsdagfasga
+        - 53745d66-435s-2dfs-9725-fsd3fsda32fs
