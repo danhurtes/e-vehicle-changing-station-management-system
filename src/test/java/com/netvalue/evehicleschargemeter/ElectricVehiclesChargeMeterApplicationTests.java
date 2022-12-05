@@ -3,16 +3,13 @@ package com.netvalue.evehicleschargemeter;
 import com.netvalue.evehicleschargemeter.utils.CustomerUtils;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeParseException;
 import java.util.stream.Stream;
 
 @SpringBootTest
-@RunWith(SpringRunner.class)
 class ElectricVehiclesChargeMeterApplicationTests {
 	private static final Stream<String> DATES_STREAM = Stream.of(
 			"2022-12-05 01:10:23.123456789",
